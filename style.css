@@ -31,6 +31,7 @@ nav {
 }
 
 .logo a {
+    margin-right: 1050px;
     font-size: 24px;
     font-weight: bold;
 }
@@ -133,7 +134,7 @@ section#work h2 {
 
 section#work ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 40px;
@@ -147,6 +148,7 @@ section#work li {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     }
+    
     
     section#work li img {
     width: 100%;
@@ -258,12 +260,21 @@ section#work li {
     }
     
     @media only screen and (max-width: 768px) {
+        .d-none {
+            display: none;
+        }
+
+        .logo a {
+            margin-right: 200px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
     .nav-links {
     position: fixed;
     top: 0;
-    left: -200px;
-    height: 100%;
-    width: 200px;
+    align-items: center;
+    width: 100%;
     background-color: #1d1f2f;
     z-index: 2;
     transition: left 0.3s ease;
@@ -313,6 +324,16 @@ section#work li {
 }
 
 @media only screen and (max-width: 480px) {
+.d-none {
+    display: none;
+}
+
+.logo a {
+    margin-right: 200px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 section#hero h1 {
 font-size: 36px;
 }
@@ -332,6 +353,13 @@ section#work li {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+.kolom-auto-no-pad{
+    position: relative;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 .baris {
     display: -ms-flexbox;
     display: flex;
@@ -341,7 +369,23 @@ section#work li {
     margin-left: -15px;
 }
 
+.card {
+    width: calc(33.333% - 20px);
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+} 
+
 .kolom-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .kolom-auto-no-pad {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
