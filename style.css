@@ -329,9 +329,7 @@ section#work li {
 }
 
 .logo a {
-    margin-right: 200px;
-    font-size: 24px;
-    font-weight: bold;
+    display: none;
 }
 
 section#hero h1 {
